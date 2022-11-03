@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 1) 0%, rgba(0, 212, 255, 1) 100%, rgba(18, 181, 203, 1) 100%);
+    font-family: sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: firebrick;
+    font-size: 48px;
+}
+
+.search {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+
+input {
+    width: 400px;
+    height: 100%;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+}
+
+.search__btn {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightblue;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.search__btn:hover {
+    background: dodgerblue;
+    color: white;
+}
+
+#table {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+article {
+    border: 1px solid black;
+    background: lightgoldenrodyellow;
+    padding: 8px;
+    margin: 8px;
+    width: 300px;
+}
+
+h2 {
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+p {
+    text-align: justify;
+}
+
+input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+article:has(input[type=checkbox]:checked) {
+    color: white;
+    background: saddlebrown;
+    border: 1px solid white;
+}
